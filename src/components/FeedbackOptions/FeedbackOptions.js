@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from './FeedBackOption.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <ul className="buttonList">
+  <ul className={css.buttonList}>
     {options.map((butt, index) => (
-      <li key={index} className="button__item">
+      <li key={index} className={css.button__item}>
         <button
           onClick={() => {
             onLeaveFeedback(butt);
